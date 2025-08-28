@@ -10,6 +10,7 @@ getElement('call-box').addEventListener('click', function (e) {
         const callTitle = cartButton.parentNode.parentNode.children[1].children[0].innerText
         const callNumber = cartButton.parentNode.parentNode.children[1].children[2].innerText
 
+
         let allCoin = getElement('all-coin').innerText;
         if (allCoin < 20) {
             alert("❌ You don't have enough coins. You need at least 20 coins to make a call.!");
@@ -42,7 +43,6 @@ document.getElementById('btn-clear').addEventListener('click', function () {
     history.innerHTML = '';
 })
 
-
 getElement('call-box').addEventListener('click', function (e) {
     if (e.target.closest('.love-button')) {
         let loveCount = parseInt(getElement('love-number').innerText);
@@ -51,7 +51,6 @@ getElement('call-box').addEventListener('click', function (e) {
         const btn = e.target.closest('.love-button');
     }
 });
-
 
 getElement('call-box').addEventListener('click', function (e) {
     if (e.target.closest('.copy-btn')) {
